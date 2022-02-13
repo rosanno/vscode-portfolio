@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Spotify-clone",
+    "img": "/images/spotify-clone.png",
+    "tools": ["next", "tailwindcss", "next-auth"]
+  },
+  {
+    "id": 2,
+    "title": "Hulu-clone",
+    "img": "/images/hulu-clone.png",
+    "tools": ["next", "tailwindcss", "react"],
+    "link": "https://hulu-clone-mu-gold.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "real-estate",
+    "img": "/images/realstate.png",
+    "tools": ["next", "chakra-ui", "react"],
+    "link": "https://realestate-six-gamma.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "shareme",
+    "img": "/images/shareme.png",
+    "tools": ["react", "tailwindcss", "sanity"]
+  },
+  {
+    "id": 5,
+    "title": "slack-clone",
+    "img": "/images/slack-clone.png",
+    "tools": ["next", "tailwindcss", "firebase", "redux"],
+    "link": "https://slack-clone-4ef3e.web.app/"
+  }
+]
