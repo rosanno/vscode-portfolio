@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import TypewriterComponent from 'typewriter-effect';
 
 export default function Home() {
   return (
@@ -9,10 +10,19 @@ export default function Home() {
           {/* eslint-disable-next-line */}
           I'm Rosanno
         </h1>
-        <span className='text-2xl mt-2'>Full Stack Developer</span>
+        <div className='text-xl font-jetBrains my-3'>
+          <TypewriterComponent
+            onInit={(typewriter) => {
+              typewriter
+                .typeString('Frontend Developer')
+                .pauseFor(1000)
+                .start();
+            }}
+          />
+        </div>
         <div
-          className='mt-14 border-2 border-sky-600 w-fit py-1 
-        px-4 cursor-pointer rounded-md hover:bg-sky-500 hover:bg-opacity-20 transition duration-150 text-lg'
+          className='mt-8 border-2 border-cyan-600 w-fit py-1 
+        px-4 cursor-pointer hover:bg-cyan-900 hover:scale-110 transition duration-150 text-lg'
         >
           Download CV
         </div>

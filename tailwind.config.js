@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        italiano: ['Italianno', 'cursive'],
+        jetBrains: ['JetBrains Mono', 'monospace'],
       },
     },
   },

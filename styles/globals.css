@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -123,4 +123,7 @@ body {
 .redux {
   border: 2px solid #c084fc;
   border-radius: 15px;
+}
+
+.html5 {
 }

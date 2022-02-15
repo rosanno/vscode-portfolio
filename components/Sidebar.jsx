@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import { VscChevronDown, VscChevronRight } from 'react-icons/vsc';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const NavItems = [
   {
@@ -29,6 +30,7 @@ const NavItems = [
 
 function Sidebar({ active }) {
   const [open, setOpen] = useState(true);
+  const router = useRouter();
 
   const handleOpen = () => {
     setOpen(!open);
@@ -64,7 +66,9 @@ function Sidebar({ active }) {
             {NavItems.map(({ title, icon, link }, i) => (
               <div
                 key={i}
-                className='flex items-center space-x-3 mt-1 py-1 px-6  w-52 hover:bg-black hover:bg-opacity-10 cursor-pointer'
+                className={`flex items-center space-x-3 mt-1 py-1 px-6  w-52 hover:bg-black hover:bg-opacity-10 cursor-pointer ${
+                  router.pathname === link && 'bg-gray-900 bg-opacity-20'
+                }`}
               >
                 <Link href={link} passHref>
                   <div className='flex items-center space-x-2'>

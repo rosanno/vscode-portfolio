@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BottomBar from './BottomBar';
 import Navigation from './Navigation';
 import Sidebar from './Sidebar';
 import SideNav from './SideNav';
 import TopBar from './TopBar';
+import Loader from './Loader';
 
 const NavItems = [
   {
@@ -30,29 +31,42 @@ const NavItems = [
 
 function Main({ children }) {
   const [active, setActive] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleActive = () => {
     setActive(!active);
   };
 
-  return (
-    <div className='h-screen w-full bg-[#292D3E] overflow-hidden transition-all duration-100'>
-      <TopBar />
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
 
-      <div className='flex relative'>
-        <SideNav handleActive={handleActive} />
-        <Sidebar active={active} />
-        <div
-          className={`grow mt-7 h-screen overflow-auto scrollbar hover:scrollbar-thumb-purple-900 ${
-            active ? 'lg:ml-10' : 'lg:ml-[15.8rem]'
-          }`}
-        >
-          <Navigation NavItems={NavItems} />
-          <main>{children}</main>
+  return (
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className='h-screen w-full bg-[#292D3E] overflow-hidden transition-all duration-100'>
+          <TopBar />
+
+          <div className='flex relative'>
+            <SideNav handleActive={handleActive} />
+            <Sidebar active={active} />
+            <div
+              className={`grow mt-7 h-screen overflow-auto scrollbar hover:scrollbar-thumb-purple-900 ${
+                active ? 'lg:ml-10' : 'lg:ml-[15.8rem]'
+              }`}
+            >
+              <Navigation NavItems={NavItems} />
+              <main>{children}</main>
+            </div>
+          </div>
+          <BottomBar />
         </div>
-      </div>
-      <BottomBar />
-    </div>
+      )}
+    </>
   );
 }
 
