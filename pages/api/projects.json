@@ -21,9 +21,9 @@
   },
   {
     "id": 4,
-    "title": "shareme",
-    "img": "/images/shareme.png",
-    "tools": ["react", "tailwindcss", "sanity"]
+    "title": "Fb-clone",
+    "img": "/images/fb-clone.png",
+    "tools": ["react", "tailwindcss", "firbase", "next-auth"]
   },
   {
     "id": 5,
