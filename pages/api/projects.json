@@ -23,7 +23,7 @@
     "id": 4,
     "title": "Fb-clone",
     "img": "/images/fb-clone.png",
-    "tools": ["react", "tailwindcss", "firbase", "next-auth"]
+    "tools": ["react", "tailwindcss", "firebase", "next-auth"]
   },
   {
     "id": 5,
