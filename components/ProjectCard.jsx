@@ -19,9 +19,13 @@ function ProjectCard({ title, img, tools, link }) {
           </div>
         </div>
         <div className='flex justify-between py-2 px-2'>
-          <a href={link} target='_blank' rel='noreferrer'>
-            <FiExternalLink className='text-white text-2xl' />
-          </a>
+          {link ? (
+            <a href={link} target='_blank' rel='noreferrer'>
+              <FiExternalLink className='text-white text-2xl' />
+            </a>
+          ) : (
+            <div></div>
+          )}
 
           <AiFillGithub className='text-white text-2xl' />
         </div>
