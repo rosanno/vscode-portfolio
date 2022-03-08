@@ -75,7 +75,8 @@ body {
 .chakra-ui,
 .sanity,
 .firebase,
-.redux {
+.redux,
+.typescript {
   padding: 0.1rem 0.4rem 0.1rem 0.4rem;
   margin: 0.3rem 0.4rem 0.5rem 0.4rem;
 }
@@ -85,7 +86,8 @@ body {
   margin-left: 0;
 }
 
-.next {
+.next,
+.typescript {
   border: 2px solid #2563eb;
   border-radius: 15px;
 }

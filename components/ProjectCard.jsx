@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 
-function ProjectCard({ title, img, tools, link }) {
+function ProjectCard({ title, img, tools, link, github }) {
   return (
     <div className='my-6'>
       <div className='bg-slate-900 shadow-lg overflow-hidden w-11/12 rounded-md hover:scale-110 transition duration-200'>
@@ -27,7 +27,13 @@ function ProjectCard({ title, img, tools, link }) {
             <div></div>
           )}
 
-          <AiFillGithub className='text-white text-2xl' />
+          {github ? (
+            <a href={github} target='_blank' rel='noreferrer'>
+              <AiFillGithub className='text-white text-2xl' />
+            </a>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </div>

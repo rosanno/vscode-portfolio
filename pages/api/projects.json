@@ -10,26 +10,38 @@
     "title": "Hulu-clone",
     "img": "/images/hulu-clone.png",
     "tools": ["next", "tailwindcss", "react"],
-    "link": "https://hulu-clone-mu-gold.vercel.app/"
+    "link": "https://hulu-clone-mu-gold.vercel.app/",
+    "github": "https://github.com/rosanno/hulu-clone"
   },
   {
     "id": 3,
     "title": "real-estate",
     "img": "/images/realstate.png",
     "tools": ["next", "chakra-ui", "react"],
-    "link": "https://realestate-six-gamma.vercel.app/"
+    "link": "https://realestate-six-gamma.vercel.app/",
+    "github": "https://github.com/rosanno/realestate"
   },
   {
     "id": 4,
     "title": "Fb-clone",
     "img": "/images/fb-clone.png",
-    "tools": ["react", "tailwindcss", "firebase", "next-auth"]
+    "tools": ["react", "tailwindcss", "firebase", "next-auth"],
+    "github": "https://github.com/rosanno/facebook-clone"
   },
   {
     "id": 5,
     "title": "slack-clone",
     "img": "/images/slack-clone.png",
     "tools": ["next", "tailwindcss", "firebase", "redux"],
-    "link": "https://slack-clone-4ef3e.web.app/"
+    "link": "https://slack-clone-4ef3e.web.app/",
+    "github": "https://github.com/rosanno/slack-clone"
+  },
+  {
+    "id": 6,
+    "title": "medium-clone",
+    "img": "/images/medium-clone.png",
+    "tools": ["next", "tailwindcss", "sanity", "typescript"],
+    "link": "https://medium-clone-smoky.vercel.app/",
+    "github": "https://github.com/rosanno/medium-clone"
   }
 ]

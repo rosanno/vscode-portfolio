@@ -89,10 +89,10 @@ function About() {
               I'm Rosanno Macabuhay, looking for a position to kickstart my
               career
               {/* eslint-disable-next-line */}
-              in the field of Frontend Development. I've been interested in
-              learning Frontend Development during my entire college and took
-              this chance during pandemic to be more skilled and knowledgeable
-              on this field 🚀.
+              in the field of information technology (IT). I've been interested
+              in learning web development during my entire college and took this
+              chance during pandemic to be more skilled and knowledgeable on
+              this field 🚀.
             </span>
           </div>
         </div>

@@ -13,10 +13,7 @@ export default function Home() {
         <div className='text-xl font-jetBrains my-3'>
           <TypewriterComponent
             onInit={(typewriter) => {
-              typewriter
-                .typeString('Frontend Developer')
-                .pauseFor(1000)
-                .start();
+              typewriter.typeString('Web Developer').pauseFor(1000).start();
             }}
           />
         </div>
