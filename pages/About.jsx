@@ -75,7 +75,7 @@ function About() {
       <div>
         <div className='flex flex-col items-center justify-center mt-10 lg:mt-4'>
           <Image
-            src='/icons/profile.jpg'
+            src='/images/me.jpg'
             alt='Profile'
             width={150}
             height={150}
